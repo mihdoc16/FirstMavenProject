@@ -38,9 +38,16 @@ public class AnlageTest {
     }
     
     @org.junit.Test
-    public void testSomething(){
+    public void testSomething1(){
         Anlage a = new Anlage(2000.0, 10);
         a.berechneSomething(30);
         assertEquals(350.0, a.getSomething(), 0.01);
+    }
+    
+    @org.junit.Test
+    public void testSomething2(){
+        Anlage a = new Anlage(2000.0, 10);
+        a.berechneSomething(15);
+        assertEquals(300.0, a.getSomething(), 0.01);
     }
 }
