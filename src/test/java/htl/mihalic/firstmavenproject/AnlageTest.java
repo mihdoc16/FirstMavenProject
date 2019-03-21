@@ -48,6 +48,6 @@ public class AnlageTest {
     public void testSomething2(){
         Anlage a = new Anlage(2000.0, 10);
         a.berechneSomething(15);
-        assertEquals(300.0, a.getSomething(), 0.01);
+        assertEquals(200.0, a.getSomething(), 0.01);
     }
 }
