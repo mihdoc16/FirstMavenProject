@@ -34,7 +34,7 @@ public class Anlage {
     public void berechneSomething(int eineZahl){
         something = (eineZahl + 5) * 10;
     }
-
+    
     public double getBuchwert() {
         return buchwert;
     }
@@ -43,5 +43,5 @@ public class Anlage {
         return something;
     }
     
-     
+    
 }
