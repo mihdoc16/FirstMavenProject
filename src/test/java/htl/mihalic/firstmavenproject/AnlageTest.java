@@ -36,4 +36,11 @@ public class AnlageTest {
         a.updateBuchwert(12);
         assertEquals(1.0, a.getBuchwert(), 0.01);
     }
+    
+    @org.junit.Test
+    public void testSomething(){
+        Anlage a = new Anlage(2000.0, 10);
+        a.berechneSomething(30);
+        assertEquals(350.0, a.getSomething(), 0.01);
+    }
 }

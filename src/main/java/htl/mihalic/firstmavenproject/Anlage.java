@@ -13,6 +13,7 @@ public class Anlage {
     private double anschaffungswert;
     private int nutzungsdauer;
     private double buchwert;
+    private double something;
 
     public Anlage(double anschaffungswert, int nutzungsdauer) {
         this.anschaffungswert = anschaffungswert;
@@ -29,10 +30,18 @@ public class Anlage {
             buchwert = 1;
         }
     }
+    
+    public void berechneSomething(int eineZahl){
+        something = (eineZahl + 5) * 10;
+    }
 
     public double getBuchwert() {
         return buchwert;
     }
+
+    public double getSomething() {
+        return something;
+    }
     
-    
+     
 }
